@@ -1,12 +1,28 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<!doctype html>
+<html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
-    {{ content }}
+  	<center>
+  		<a href="/index"><img src="/assets/images/website-title.jpg"></a>
+  	</center>
+    {% include navigation.html %}
+    <div>
+      {{ content }}
+      {% for tag in page.tags %}
+        {% assign tag_slug = tag | slugify: "raw" %}
+        <div class="tag-link">
+          <a
+            href={{ site.baseurl | append: "/tags/" | append: tag_slug | append: "/" }}
+            rel="category tag">
+            #{{ tag }}
+          </a>
+        </div>
+      {% endfor %}
+  </div>
   </body>
 </html>
+

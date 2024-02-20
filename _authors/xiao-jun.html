@@ -1,0 +1,13 @@
+---
+layout: layout-author
+name: xiao jun
+chinese_name: 萧军
+---
+<body>
+Xiao Jun foi um grande escritor.
+
+		{% assign filtered_textos = site.textos | where: 'author', page.name %}
+		 {% for item in filtered_textos %}
+    		<h4><a href="{{ item.url }}">{{ item.title }}</a></h4>
+    	 {% endfor %}
+</body>
