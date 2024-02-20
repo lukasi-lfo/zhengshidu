@@ -1,6 +1,6 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "oath" # the name of your site, e.g. ACME Corp.
+url: "zhengshidu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "zhengshidu.github.io" # the subpath of your site, e.g. /blog
+title: "zheng shi du" # the name of your site, e.g. ACME Corp.
 
 kramdown:
 syntax_highlighter: rouge
