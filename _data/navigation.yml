@@ -1,0 +1,10 @@
+- name: início | 首页
+  link: /
+- name: glossário | 字汇
+  link: /glossario.html
+#- name: downloads
+# link: /downloads.html
+#- name: dicas e tutoriais
+#  link: /dicas_tutoriais.html
+- name: links úteis | 链接
+  link: /links_uteis.html
