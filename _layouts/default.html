@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href={{"/assets/css/styles.css" | relative_url}}>
   </head>
   <body>
   	<center>
-  		<a href="/index"><img src="/assets/images/website-title.jpg"></a>
+  		<a href="{{site.baseurl}}/"><img src={{"/assets/images/website-title.jpg" | relative_url}}></a>
   	</center>
     {% include navigation.html %}
     <div>

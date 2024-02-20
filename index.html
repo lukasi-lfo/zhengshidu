@@ -5,15 +5,15 @@ title: zheng shi du - literatura chinesa
 
 <body>
 <center>  
-	<h1 id="about-page"><a href="/index.html" class="title">literatura chinesa e literatura brasileira<br>中国巴西文学</a></h1>
+	<h1 id="about-page"><a href="/zhengshidu/index.html" class="title">literatura chinesa e literatura brasileira<br>中国巴西文学</a></h1>
 </center>
 
 <div class="texts-authors">
 	
 		{% for author in site.authors %}
 		<div class="texts">
-		<div class="container"><a href="{{author.url}}">
-			<img class="text-authors-img" src="/authors/{{author.name}}.jpg">
+		<div class="container"><a href="{{site.baseurl}}{{author.url}}">
+			<img class="text-authors-img" src="{{site.baseurl}}/authors/{{author.name}}.jpg">
 			<div class="centered">
 			<h2 class="author-name">{{ author.name }} <br> {{author.chinese_name}}</h2>
 				<!--{% assign filtered_textos = site.textos | where: 'author', author.name %}

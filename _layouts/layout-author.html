@@ -5,7 +5,7 @@ layout: default
 <body>
 <div class="conteudo">
 	<div>
-		<img class="author-intro-img" src="/authors/{{page.name}}.jpg">
+		<img class="author-intro-img" src="{{site.baseurl}}/authors/{{page.name}}.jpg">
 	</div>
 	
 	<div class="author-intro">
@@ -15,7 +15,7 @@ layout: default
 			<p>
 				{% assign filtered_textos = site.textos | where: 'author', page.name %}
 				{% for item in filtered_textos %}
-    				<a href="{{ item.url }}">{{ item.title }} | {{item.title_pt}}</a>
+    				<a href="{{site.baseurl}}{{ item.url }}">{{ item.title }} | {{item.title_pt}}</a>
     			{% endfor %}
     		</p>
     		</h1>
@@ -29,8 +29,8 @@ layout: default
 			{% for author in site.authors %}
 				<div class="texts">
 					<div class="container">
-						<a href="{{author.url}}">
-							<img class="text-authors-img" src="/authors/{{author.name}}.jpg">
+						<a href="{{site.baseurl}}{{author.url}}">
+							<img class="text-authors-img" src="{{site.baseurl}}/authors/{{author.name}}.jpg">
 							<div class="centered">
 								<h2 class="author-name">{{ author.name }} <br> {{author.chinese_name}}</h2>
   							</div>
