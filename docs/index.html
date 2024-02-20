@@ -1,0 +1,47 @@
+---
+layout: default
+title: zheng shi du - literatura chinesa
+---
+
+<body>
+<center>  
+	<h1 id="about-page"><a href="/index.html" class="title">literatura chinesa e literatura brasileira<br>中国巴西文学</a></h1>
+</center>
+
+<div class="texts-authors">
+	
+		{% for author in site.authors %}
+		<div class="texts">
+		<div class="container"><a href="{{author.url}}">
+			<img class="text-authors-img" src="/authors/{{author.name}}.jpg">
+			<div class="centered">
+			<h2 class="author-name">{{ author.name }} <br> {{author.chinese_name}}</h2>
+				<!--{% assign filtered_textos = site.textos | where: 'author', author.name %}
+					{% for item in filtered_textos %}
+      					<h3><a class="lista-textos" href="{{ item.url }}">{{ item.title }}<br>{{item.title_pt}}</a></h3>
+  					{% endfor %}-->
+  			</div>
+  			</a>
+  		</div>
+  		</div>
+  		{% endfor %}
+	
+
+<!-- 	<div class="authors">
+		<h2>autorxs</h2>
+  {% for author in site.authors %}
+      <h4><a href="{{ author.url }}">{{ author.name }}</a></h4>
+  {% endfor %}
+	</div> -->
+</div>
+
+<div class="conteudo">
+	<p>
+		Zheng Shi Du é um site de traduções de contos, crônicas e outros textos relevantes das literaturas chinesa e brasileira do século XX. Textos chineses traduzidos para o português, textos brasileiros traduzidos para o chinês, apresentados em versões bilíngues. Além das traduções literárias, é possível visualizar a tradução de termo por termo ao passar o mouse sobre os caracteres. O objetivo do site é apresentar ao público brasileiro parte da literatura chinesa ainda pouco conhecida no país e vice-versa, ao mesmo tempo fornecendo material para quem estuda o idioma.
+	</p>
+	<p>
+		Agradecimentos a 谭述丹 por dar nome ao site e a 流畅 pelo design.
+</div>
+</main>
+
+</body>

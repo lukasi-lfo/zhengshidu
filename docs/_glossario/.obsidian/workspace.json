@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "77d9da0643c4c62f",
+    "type": "split",
+    "children": [
+      {
+        "id": "d7fd73bf0af7e8c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d59f6c60585f350",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HSK 1/我.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0882c2d147928544",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HSK 1/我.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0d6452a445e14ac3",
+    "type": "split",
+    "children": [
+      {
+        "id": "3faa9ae8c450b80f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc6c8a66612313a9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "02b221d0302924f3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "580a82301725bf50",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "191372eedc932aae",
+    "type": "split",
+    "children": [
+      {
+        "id": "49e9bbd6cacdb5ec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa9bc8fcd0ffb3fd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "HSK 1/我.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f064ca9fbf514b66",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "HSK 1/我.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3be9ccfa9f11ebef",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e0b70a54627e012d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "HSK 1/我.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "0882c2d147928544",
+  "lastOpenFiles": [
+    "HSK 1.md",
+    "HSK 1/我.md",
+    "HSK 1/爱.md",
+    "radicais/友.md",
+    "radicais/爫.md",
+    "radicais/千.md",
+    "radicais/戈.md",
+    "glossario/radicais/戈.md",
+    "glossario/radicais",
+    "glossario",
+    "HSK 2/som.md",
+    "HSK 2",
+    "radicais",
+    "radicaiss",
+    "_modelos/我.md",
+    "_modelos",
+    "modelos/我.md",
+    "modelos",
+    "Sem título.canvas",
+    "pronome 代词.md",
+    "pronomes.md",
+    "HSK 1"
+  ]
+}
