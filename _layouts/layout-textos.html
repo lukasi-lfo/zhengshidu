@@ -2,50 +2,48 @@
 layout: default
 ---
 
-<div class="layout-textos">
-	<div class="previous">
+<div>
+	<div>
 		{% for item in site.data.lista-textos %}
 		{% if item.name == page.anterior %}
-		<a href="{{ item.link }}"> ← {{ item.name }} </a>
+		<a href="{{ item.link | relative_url}}"> ← {{ item.name }} </a>
 		{% endif %}
 		{% endfor %}
 	</div>
-	<div class="home-buttom" >
+	<div>
 	
 	</div>
-	<div class="next">
+	<div>
 	{% for item in site.data.lista-textos %}
 		{% if item.name == page.proximo %}
-		<a href="{{ item.link }}">{{ item.name }} → </a>
+		<a href="{{ item.link | relative_url}}">{{ item.name }} → </a>
 		{% endif %}
 	{% endfor %}
 	</div>
 </div>
 
-<div class="grid-container">
-<article>
-<h1>{{ page.title }}</h1>
+<div>
+<h1>{{ page.title }} | {{ page.title_pt}}</h1>
 {% assign author = site.data.authors[page.author] %}
-<h2><a href="{{author.link}}">{{ author.name }}</a></h2>
-</article>
+<h2><a href="{{author.link | relative_url}}"> {{ author.chinese_name}} | {{ author.name }}</a></h2>
 </div>
 {{ content }}
 
-<div class="layout-textos">
-	<div class="previous">
+<div>
+	<div>
 		{% for item in site.data.lista-textos %}
 		{% if item.name == page.anterior %}
-		<a href="{{ item.link }}"> ← {{ item.name }} </a>
+		<a href="{{ item.link | relative_url}}"> ← {{ item.name }} </a>
 		{% endif %}
 		{% endfor %}
 	</div>
-	<div class="home-buttom" >
-	<a href="/index"> página inicial</a>
+	<div>
+	<a href="/zhengshidu/index"> página inicial</a>
 	</div>
-	<div class="next">
+	<div>
 	{% for item in site.data.lista-textos %}
 		{% if item.name == page.proximo %}
-		<a href="{{ item.link }}">{{ item.name }} → </a>
+		<a href="{{ item.link | relative_url}}">{{ item.name }} → </a>
 		{% endif %}
 	{% endfor %}
 	</div>

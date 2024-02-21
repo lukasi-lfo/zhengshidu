@@ -3,14 +3,14 @@ layout: default
 ---
 
 <body>
-<div class="conteudo">
+<div>
 	<div>
-		<img class="author-intro-img" src="{{site.baseurl}}/authors/{{page.name}}.jpg">
+		<img src="{{site.baseurl}}/authors/{{page.name}}.jpg">
 	</div>
 	
-	<div class="author-intro">
+	<div>
 		<div>
-			<h1 class="conteudo">{{page.name}}<br>
+			<h1>{{page.name}}<br>
 			{{page.chinese_name}}<br>
 			<p>
 				{% assign filtered_textos = site.textos | where: 'author', page.name %}
@@ -21,17 +21,17 @@ layout: default
     		</h1>
     	</div>
     	
-    	<div class="grid-container">
+    	<div>
 		{{ content }}
-			<div class="notas">
+			<div>
 			</div>
 
 			{% for author in site.authors %}
-				<div class="texts">
-					<div class="container">
+				<div>
+					<div>
 						<a href="{{site.baseurl}}{{author.url}}">
-							<img class="text-authors-img" src="{{site.baseurl}}/authors/{{author.name}}.jpg">
-							<div class="centered">
+							<img src="{{site.baseurl}}/authors/{{author.name}}.jpg">
+							<div>
 								<h2 class="author-name">{{ author.name }} <br> {{author.chinese_name}}</h2>
   							</div>
   						</a>

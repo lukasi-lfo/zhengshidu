@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="snippets">
-	<h1 class="snippets-heading">Entradas com as tags "{{ page.tag-name }}"</h1>
+	<h1 class="snippets-heading">{{ page.tag-name }}</h1>
 
 {% assign filtered-tag = page.tag-name %}
 
@@ -11,7 +11,9 @@ layout: default
 {% for collection in site.collections %}
 	{% for page in site[collection.label] %}
 		{% if page.tags contains filtered-tag %}
-			<a href="{{page.url | relative_url}}">{{ page.name }}</a><br>
+			<div>
+			<small><a href="{{page.url | relative_url}}">{{ page.excerpt }}</a></small>
+			</div>
 		{% endif %}
 	{% endfor %}
 {% endfor %}

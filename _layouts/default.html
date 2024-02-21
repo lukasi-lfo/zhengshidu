@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href={{"/assets/css/styles.css" | relative_url}}>
+      <link rel="icon" type="image/x-icon" href={{"/assets/images/favicon.ico"| relative_url}}>
   </head>
   <body>
   	<center>
-  		<a href="{{site.baseurl}}/"><img src={{"/assets/images/website-title.jpg" | relative_url}}></a>
+  		<a href="{{site.baseurl}}/"><img class="sitetitle" src={{"/assets/images/website-title.png" | relative_url}}></a>
   	</center>
     {% include navigation.html %}
-    <div>
+    <div class="sitecontent">
       {{ content }}
       {% for tag in page.tags %}
         {% assign tag_slug = tag | slugify: "raw" %}
-        <div class="tag-link">
+        <div>
           <a
             href={{ site.baseurl | append: "/tags/" | append: tag_slug }}
             rel="category tag">
@@ -23,6 +24,23 @@
         </div>
       {% endfor %}
   </div>
+
+<footer class="sitefooter">
+  <div class="sitefooter-grid">
+    <div class="sitefooter">
+      Zheng Shi Du é um site de traduções de contos, crônicas e outros textos relevantes das literaturas chinesa e brasileira do século XX. Textos chineses traduzidos para o português, textos brasileiros traduzidos para o chinês, apresentados em versões bilíngues. Além das traduções literárias, é possível visualizar a tradução de termo por termo ao passar o mouse sobre os caracteres. O objetivo do site é apresentar ao público brasileiro parte da literatura chinesa ainda pouco conhecida no país e vice-versa, ao mesmo tempo fornecendo material para quem estuda o idioma.
+
+      Agradecimentos a 谭述丹 por dar nome ao site e a 刘畅 pelo design.
+    </div>
+
+    <div class="sitefooter">
+      Zheng Shi Du é um site de traduções de contos, crônicas e outros textos relevantes das literaturas chinesa e brasileira do século XX. Textos chineses traduzidos para o português, textos brasileiros traduzidos para o chinês, apresentados em versões bilíngues. Além das traduções literárias, é possível visualizar a tradução de termo por termo ao passar o mouse sobre os caracteres. O objetivo do site é apresentar ao público brasileiro parte da literatura chinesa ainda pouco conhecida no país e vice-versa, ao mesmo tempo fornecendo material para quem estuda o idioma.
+
+      Agradecimentos a 谭述丹 por dar nome ao site e a 刘畅 pelo design.
+    </div>
+</div>
+<center>@lfo</center>
+</footer>
   </body>
 </html>
 

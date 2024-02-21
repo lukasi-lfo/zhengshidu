@@ -1,6 +1,16 @@
 lu xun:
   name: lu xun
+  chinese_name: 魯迅
   link: /authors/lu-xun.html
 xiao jun:
   name: xiao jun
+  chinese_name: 萧军
   link: /authors/xiao-jun.html
+san mao:
+  name: san mao
+  chinese_name: 三毛
+  link: /authors/san-mao.html
+clarice lispector:
+  name: clarice lispector
+  chinese_name: 克拉丽丝·李斯佩克朵
+  link: /authors/clarice-lispector.html
