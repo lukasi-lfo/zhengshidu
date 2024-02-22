@@ -1,9 +1,11 @@
 /*GENERAL*/
 body { background-color: #fafafa; -webkit-text-size-adjust: 10%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
 
-img.sitetitle { object-fit: cover; padding: 2%; }
+img.sitetitle { min-width: 20vw; padding: 2%; }
 
 .sitetitle:hover { filter: brightness(300%); }
+
+h1 { font-size: 4vh; }
 
 /*NAVIGATION*/
 .current { background-color: black; }
@@ -14,7 +16,7 @@ a.menu-link:hover { color: #ffeeff; background-color: black; }
 
 a.menu-link:visited:hover { color: #ff88ff; text-decoration: none; }
 
-.menu-bar { color: #ffffff; background-color: gray; text-align: center; font-size: 1.9vw; font-family: urw gothic L, avantgard, Optima, Noto CJK,  sans-serif; text-decoration: none; color: #aaaaaa; display: grid; grid-template-columns: 1fr 1fr 1fr; }
+.menu-bar { color: #ffffff; background-color: gray; text-align: center; font-size: 2vw; font-family: urw gothic L, avantgard, Optima, Noto CJK,  sans-serif; text-decoration: none; color: #aaaaaa; display: grid; grid-template-columns: 1fr 1fr 1fr; }
 
 /*GENERAL CONTENT*/
 .sitecontent { padding-top: 5%; padding-left: 10%; padding-right: 10%; padding-bottom: 7%; }
@@ -28,14 +30,11 @@ a.title { text-decoration: none; color: #000000; font-family: urw gothic L, avan
 a.title:hover { color: #dcdede; }
 
 /*INDEX PAGE*/
-.authors-index-grid { display: grid; grid-template-columns: 1fr 1fr; }
+.authors-index-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; }
 
-/*	.authors-index-center {
-		text-align: center;
-	}*/
 .authors-index-container:hover .authors-index-img { opacity: 0.3; }
 
-.authors-index-container:hover .authors-index-centered { opacity: 1; cursor: pointer; color: #ff44ff; }
+.authors-index-container:hover .authors-index-centered { opacity: 1; cursor: pointer; color: #ff77ff; }
 
 .authors-index-container:hover .authors-index-centered-pt { opacity: 1; cursor: pointer; color: #ff44ff; }
 
@@ -49,9 +48,9 @@ a.title:hover { color: #dcdede; }
 
 .authors-index-centered-pt:hover { opacity: 1; }
 
-.author-name { opacity: 1; font-size: 20vh; }
+.author-name { opacity: 1; font-size: 5vw; font-size-adjust: auto; }
 
-.author-name-pt { opacity: 1; font-size: 5vh; color: black; }
+.author-name-pt { opacity: 1; font-size: 2vw; font-size-adjust: auto; color: black; }
 
 img.authors-index-img { max-width: 100%; object-fit: contain; }
 
@@ -110,14 +109,15 @@ a.lista-textos { color: black; filter: drop-shadow(1px 1px 1px white); max-heigh
 /*SITE FOOTER*/
 .sitefooter { background-color: grey; color: white; padding-top: 3%; padding-right: 10%; padding-left: 10%; font-size: 1vw; }
 
-.sitefooter-grid { display: grid; grid-template-columns: 1fr 1fr; padding-bottom: 5%; }
+.sitefooter-grid { display: grid; grid-template-columns: 1fr 1fr; padding-bottom: 1%; }
 
 /*MOBILE*/
-@media only screen and (max-width: 600px) { img.sitetitle { width: 50%; padding-bottom: 1%; }
-  .menu-bar { color: #ffffff; background-color: #dfd9ff; text-align: center; font-size: 4vw; font-family: urw gothic L, avantgard, Optima, sans-serif; text-decoration: none; color: #aaaaaa; display: grid; grid-template-columns: 1fr 1fr 1fr; }
+@media only screen and (max-width: 700px) { img.sitetitle { width: 50%; padding-bottom: 1%; }
+  .menu-bar { color: #ffffff; background-color: gray; text-align: center; font-size: 4vw; font-family: urw gothic L, avantgard, Optima, sans-serif; text-decoration: none; color: #aaaaaa; display: grid; grid-template-columns: 1fr 1fr 1fr; }
   /*INDEX AUTHORS MOBILES*/
+  .authors-index-grid { display: grid; grid-template-columns: 1fr; }
   .author-name { opacity: 1; font-size: 20vmin; }
-  .author-name-pt { opacity: 1; font-size: 5vmin; color: black; }
+  .author-name-pt { opacity: 1; font-size: 5vh; color: black; }
   /*SITE FOOTER MOBILE*/
-  .sitefooter { background-color: grey; color: white; padding-top: 3%; padding-right: 10%; padding-left: 10%; font-size: 3vw; }
+  .sitefooter { background-color: gray; color: white; padding-top: 3%; padding-right: 10%; padding-left: 10%; font-size: 3vw; }
   .sitefooter-grid { display: grid; grid-template-columns: 1fr; padding-bottom: 5%; } }

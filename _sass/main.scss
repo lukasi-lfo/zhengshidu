@@ -13,12 +13,17 @@
 		}
 
 	img.sitetitle{
-		object-fit: cover;
+		min-width: 20vw;
 		padding: 2%;
 	}
 
 	.sitetitle:hover{
 		filter: brightness(300%);
+	}
+
+	h1
+	{
+		font-size: 4vh;
 	}
 
 /*NAVIGATION*/ 
@@ -46,7 +51,7 @@
 		color: #ffffff;
 		background-color: gray;
 		text-align: center;
-		font-size: 1.9vw;
+		font-size: 2vw;
 		font-family: urw gothic L, avantgard, Optima, Noto CJK,  sans-serif;
 		text-decoration: none;
 		color: #aaaaaa;
@@ -88,12 +93,8 @@
 
 	.authors-index-grid	{
 		display: grid;
-		  grid-template-columns: 1fr 1fr;
+		  grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
-
-/*	.authors-index-center {
-		text-align: center;
-	}*/
 	
 	.authors-index-container:hover .authors-index-img{
 		opacity: 0.3;
@@ -102,7 +103,7 @@
 	.authors-index-container:hover .authors-index-centered{
 		opacity: 1;
 	  	cursor:pointer;
-	  	color:#ff44ff;
+	  	color:#ff77ff;
 	}
 
 	.authors-index-container:hover .authors-index-centered-pt{
@@ -158,12 +159,14 @@
 
 	.author-name{
 		opacity: 1;
-		font-size: 20vh;
+		font-size: 5vw;
+		font-size-adjust: auto;
 	}
 
 	.author-name-pt{
 		opacity: 1;
-		font-size: 5vh;
+		font-size: 2vw;
+		font-size-adjust: auto;
 		color: black;
 	}
 
@@ -346,13 +349,13 @@
 .sitefooter-grid{
 	display: grid;
 	  grid-template-columns: 1fr 1fr;
-	  padding-bottom: 5%;
+	  padding-bottom: 1%;
 }
 
 
 /*MOBILE*/
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
 
 	img.sitetitle{
 		width: 50%;
@@ -361,7 +364,7 @@
 
 	.menu-bar {
 	color: #ffffff;
-	background-color: #dfd9ff;
+	background-color: gray;
 	text-align: center;
 	font-size: 4vw;
 	font-family: urw gothic L, avantgard, Optima, sans-serif;
@@ -372,6 +375,11 @@
 	  grid-template-columns: 1fr 1fr 1fr /*1fr 1fr*/;
 	}
 /*INDEX AUTHORS MOBILES*/
+
+.authors-index-grid	{
+		display: grid;
+		  grid-template-columns: 1fr;
+	}
 .author-name{
 		opacity: 1;
 		font-size: 20vmin;
@@ -379,13 +387,13 @@
 
 	.author-name-pt{
 		opacity: 1;
-		font-size: 5vmin;
+		font-size: 5vh;
 		color: black;
 	}
 
 /*SITE FOOTER MOBILE*/
 .sitefooter{
-	background-color: grey;
+	background-color: gray;
 	color:white;
 	padding-top: 3%;
 	padding-right: 10%;
