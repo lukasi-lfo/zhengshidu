@@ -26,6 +26,11 @@
 		font-size: 4vh;
 	}
 
+	@font-face {
+    font-family: 'SuXinShiGuYinSongJian'; /*a name to be used later*/
+    src: url('/zhengshidu/assets/fonts/SuXinShiGuYinSongJian-1.ttf'); /*URL to font*/
+	}
+
 /*NAVIGATION*/ 
 	.current {
 	  background-color: black;
@@ -34,6 +39,7 @@
 	a.menu-link {
 		text-decoration: none;
 		color:#ffffff;
+		background-color: gray;
 		font-weight: bold;
 	}
 
@@ -49,16 +55,22 @@
 
 	.menu-bar {
 		color: #ffffff;
-		background-color: gray;
+		
 		text-align: center;
 		font-size: 2vw;
-		font-family: urw gothic L, avantgard, Optima, Noto CJK,  sans-serif;
+		font-family: Trebuchet, sans-serif;
 		text-decoration: none;
 		color: #aaaaaa;
 
 		display: grid;
 		  grid-template-columns: 1fr 1fr 1fr /*1fr 1fr*/;
-}
+	}
+
+	.menu-cn {
+		font-family: SuXinShiGuYinSongJian;
+	}
+
+
 
 
 /*GENERAL CONTENT*/
@@ -364,12 +376,8 @@
 
 	.menu-bar {
 	color: #ffffff;
-	background-color: gray;
 	text-align: center;
-	font-size: 6vw;
-	font-family: urw gothic L, avantgard, Optima, sans-serif;
-	text-decoration: none;
-	color: #aaaaaa;
+	font-size: 20px;
 
 	display: grid;
 	  grid-template-columns: 1fr 1fr 1fr /*1fr 1fr*/;
