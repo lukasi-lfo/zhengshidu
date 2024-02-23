@@ -5,40 +5,47 @@ layout: default
 <body>
 <div>
 	<div>
-		<img src="{{site.baseurl}}/authors/{{page.name}}.jpg">
+		<img class="author-intro-img" src="{{site.baseurl}}/authors/{{page.name}}.jpg">
 	</div>
 	
-	<div>
+	<div >
 		<div>
 			<h1>{{page.name}}<br>
 			{{page.chinese_name}}<br>
-			<p>
-				{% assign filtered_textos = site.textos | where: 'author', page.name %}
-				{% for item in filtered_textos %}
-    				<a href="{{site.baseurl}}{{ item.url }}">{{ item.title }} | {{item.title_pt}}</a>
-    			{% endfor %}
-    		</p>
     		</h1>
     	</div>
-    	
-    	<div>
-		{{ content }}
-			<div>
-			</div>
 
+    	<div class="author-intro-grid">
+		{{ content }}
+		</div>
+		
+		<div>
+				<h1> textos de <big>{{page.name}}</big> </h1>
+				<h1> <big>{{page.chinese_name}}</big> 的文本 </h1>
+				<ul>
+				{% assign filtered_textos = site.textos | where: 'author', page.name %}
+				{% for item in filtered_textos %}
+    				<il><a href="{{site.baseurl}}{{ item.url }}">{{ item.title }} | {{item.title_pt}}</a></il>
+    			{% endfor %}
+    			</ul>
+			</div>
+			<div class="other-authors-index-grid">
+			{% assign current-author = page.name %}
 			{% for author in site.authors %}
+			{% if author.name != current-author %}
 				<div>
-					<div>
+					<div class="other-authors-index-container">
 						<a href="{{site.baseurl}}{{author.url}}">
-							<img src="{{site.baseurl}}/authors/{{author.name}}.jpg">
-							<div>
-								<h2 class="author-name">{{ author.name }} <br> {{author.chinese_name}}</h2>
+							<img class="authors-index-img" src="{{site.baseurl}}/authors/{{author.name}}.jpg">
+							<div class="other-authors-index-centered">
+								<h2 class="other-author-name">{{ author.name }}{{author.chinese_name}}</h2>		
   							</div>
   						</a>
   					</div>
   				</div>
+  			{% endif %}
   			{% endfor %}
-		</div>
+  		</div>
 	</div>
 </div>
 </body>
