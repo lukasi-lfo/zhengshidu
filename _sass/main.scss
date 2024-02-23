@@ -22,6 +22,10 @@
 		font-size: 2vw;
 	}
 
+	ul {
+		font-size: 1.3vw;
+	}
+
 	@font-face {
     font-family: 'SuXinShiGuYinSongJian'; /*a name to be used later*/
     src: url('/zhengshidu/assets/fonts/SuXinShiGuYinSongJian-1.ttf'); /*URL to font*/
@@ -195,7 +199,7 @@
 		}
 
 		.hovertext:before {
-		  content: attr(data-hover);
+		  content: attr(pinyin-hover);
 		  visibility: hidden;
 		  opacity: 1;
 		  width: 140px;
@@ -206,15 +210,39 @@
 		  transition: opacity .1s ease-in-out;
 		  
 
-		  position: relative;
-		  z-index: 0;
+		  position: absolute;
+		  z-index: 1;
 		  left: 0;
-		  top: 110%;
+		  top: 100%;
 		}
 
-		.hovertext:before {
+		.hovertext-pt:before {
+		  content: attr(pt-hover);
+		  visibility: hidden;
+		  opacity: 1;
+		  width: 140px;
+		  background-color: gray;
+		  color: #ffffff;
+		  border-radius: 5px;
+		  padding: 5px 0;
+		  transition: opacity .1s ease-in-out;
+		  
+
+		  position: relative;
+		  z-index: 1;
+		  left: 0;
+		  top: 100%;
+		}
+
+		.hovertext:hover:before {
 		  opacity: 1;
 		  visibility: visible;
+		}
+
+		.hovertext-pt:hover:before{
+			opacity: 1;
+			visibility: visible;
+			background-color: gray;
 		}
 
 		span:hover{
@@ -247,7 +275,7 @@
 		  	cursor:pointer;
 		}*/
 
-	/*LANGUAGE*/
+	/*TEXTOS*/
 		.chinese {
 			font-size: 1.7vw;
 			padding-right: 1%;
@@ -325,16 +353,31 @@
 		opacity: 0.5;
 	}
 
-	a.lista-textos{
-		color:black;
-		filter:drop-shadow(1px 1px 1px white);
+	.lista-textos-box{
+		background-color: gray;
 		max-height: 100%;
 		object-fit: scale-down;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	a.lista-textos{
+		color: white;
+		text-decoration: underline;
+	}
+
+	a.lista-textos:hover{
+		color:#ff99ff;
+		
+	}
+
+	.lista-textos-title{
+		font-size:1.6vw;
 	}
 
 	.author-intro-grid{
 		display: grid;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 4fr 4fr 3fr;
 	}
 
 	.author-intro-container{
@@ -434,7 +477,7 @@
 
 /*MOBILE*/
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 900px){
 
 /* GENERAL MOBILE */
 	img.sitetitle{
@@ -445,6 +488,10 @@
 	h1
 	{
 		font-size: 4vw;
+	}
+
+	ul {
+		font-size: 3.5vw;
 	}
 
 /* NAVIGATION MOBILE */
@@ -488,6 +535,32 @@
 		color: black;
 	}
 
+/*AUTHOR PAGE MOBILE*/
+	.author-intro-grid{
+		display: grid;
+			grid-template-columns: 1fr;
+	}
+
+	.lista-textos-title{
+		font-size:3.5vw;
+	}
+/*TEXTOS MOBILE*/
+
+	.chinese {
+			font-size: 2.2vw;
+			padding-right: 0%;
+			padding-left: 0%;
+			padding-bottom: 5%;
+			
+		}
+		.portuguese {
+			font-size: 2.1vw;
+			padding-right: 0%;
+			padding-left: 0%;
+			padding-bottom: 5%;
+			
+		}
+
 /*SITE FOOTER MOBILE*/
 .sitefooter{
 	background-color: gray;
@@ -495,12 +568,12 @@
 	padding-top: 3%;
 	padding-right: 10%;
 	padding-left: 10%;
-	font-size: 3vw;
+	font-size: 2vw;
 }
 
 .sitefooter-grid{
 	display: grid;
 	  grid-template-columns: 1fr;
-	  padding-bottom: 5%;
+	  padding-bottom: 4%;
 }
 }
