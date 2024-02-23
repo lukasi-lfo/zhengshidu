@@ -459,6 +459,20 @@
 	}
 /*INDEX AUTHORS MOBILES*/
 
+.authors-index-centered-pt{
+		position: absolute;
+	  	top: 50%;
+	  	left: 0%;
+	  	/*transform: translate(-50%, -50%);*/
+	  	opacity: 1;
+	  	transition: .5s ease;
+	  	object-fit: contain;
+	  	max-height: 100%;
+	  	max-width: 100%;
+	  	overflow: hidden;
+	  	text-overflow: clip;
+	}
+
 .authors-index-grid	{
 		display: grid;
 		  grid-template-columns: 1fr;
