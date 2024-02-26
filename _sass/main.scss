@@ -332,13 +332,13 @@ a.texto{
 
 	/*TEXTOS*/
 		.chinese {
-			font-size: 1.7vw;
+			font-size: 20px;
 			padding-right: 1%;
 			padding-left: 0%;
 			
 		}
 		.portuguese {
-			font-size: 1.43vw;
+			font-size: 18px;
 			padding-right: 1%;
 			padding-left: 1%;
 			
@@ -353,7 +353,7 @@ a.texto{
 	}
 
 	.notas {
-		font-size: 1vw;
+		font-size: 12px;
 		background-color: #f4f1ef;
 		text-align: right;
 		padding-right: 10px;
@@ -403,7 +403,7 @@ a.texto{
 	}
 
 	img.author-intro-img {
-		width: 20vw;
+		width: 100%;
 		filter:brightness(110%);
 		opacity: 0.5;
 	}
@@ -432,7 +432,12 @@ a.texto{
 
 	.author-intro-grid{
 		display: grid;
-			grid-template-columns: 4fr 4fr 3fr;
+			grid-template-columns: 4fr 4fr;
+	}
+
+	.author-intro-list-grid{
+		display: grid;
+			grid-template-columns: 1fr 3fr;
 	}
 
 	.author-intro-container{
@@ -614,6 +619,14 @@ a.texto{
 			padding-left: 0%;
 			padding-bottom: 5%;
 		}
+
+		.notas {
+		font-size: 1.4vw;
+		background-color: #f4f1ef;
+		text-align: right;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
 
 		.grid-container-textos {
 			display: grid;

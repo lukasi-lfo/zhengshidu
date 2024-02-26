@@ -3,10 +3,21 @@ layout: default
 ---
 
 <body>
-<div>
+<div class="author-intro-list-grid">
 	<div>
 		<img class="author-intro-img" src="{{site.baseurl}}/authors/{{page.name}}.jpg">
 	</div>
+				<div class="lista-textos-box">
+				<h1 class="lista-textos-title"> textos de <small>{{page.name}}</small> <br>
+				<small>{{page.chinese_name}}</small> 的文本 </h1>
+				<ul>
+				{% assign filtered_textos = site.textos | where: 'author', page.name %}
+				{% for item in filtered_textos %}
+    				<il><a class="lista-textos" href="{{site.baseurl}}{{ item.url }}">{{ item.title }} | {{item.title_pt}}</a></il>
+    			{% endfor %}
+    			</ul>
+			</div>
+</div>
 	
 	<div>
 		<div>
@@ -18,17 +29,6 @@ layout: default
 
     	<div class="author-intro-grid">
 		{{ content }}
-			<div class="lista-textos-box">
-				<h1 class="lista-textos-title"> textos de <small>{{page.name}}</small> <br>
-				<small>{{page.chinese_name}}</small> 的文本 </h1>
-				<ul>
-				{% assign filtered_textos = site.textos | where: 'author', page.name %}
-				{% for item in filtered_textos %}
-    				<il><a class="lista-textos" href="{{site.baseurl}}{{ item.url }}">{{ item.title }} | {{item.title_pt}}</a></il>
-    			{% endfor %}
-    			</ul>
-			</div>
-		</div>
 			<div class="other-authors-index-grid">
 			{% assign current-author = page.name %}
 			{% for author in site.authors %}

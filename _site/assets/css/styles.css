@@ -105,13 +105,13 @@ a.texto { color: black; }
 	opacity: 1; 	cursor:pointer;
 }*/
 /*TEXTOS*/
-.chinese { font-size: 1.7vw; padding-right: 1%; padding-left: 0%; }
+.chinese { font-size: 20px; padding-right: 1%; padding-left: 0%; }
 
-.portuguese { font-size: 1.43vw; padding-right: 1%; padding-left: 1%; }
+.portuguese { font-size: 18px; padding-right: 1%; padding-left: 1%; }
 
 .layout-textos { display: grid; grid-template-columns: 1fr 1fr 1fr; padding-top: 2%; padding-left: 2%; padding-right: 2%; }
 
-.notas { font-size: 1vw; background-color: #f4f1ef; text-align: right; padding-right: 10px; padding-left: 10px; }
+.notas { font-size: 12px; background-color: #f4f1ef; text-align: right; padding-right: 10px; padding-left: 10px; }
 
 .previous { text-align: left; }
 
@@ -130,7 +130,7 @@ a.texto { color: black; }
 
 .other-authors-index-container:hover .other-authors-index-centered { opacity: 1; cursor: pointer; color: #ff77ff; }
 
-img.author-intro-img { width: 20vw; filter: brightness(110%); opacity: 0.5; }
+img.author-intro-img { width: 100%; filter: brightness(110%); opacity: 0.5; }
 
 .lista-textos-box { background-color: gray; max-height: 100%; object-fit: scale-down; padding-left: 5%; padding-right: 5%; }
 
@@ -140,7 +140,9 @@ a.lista-textos:hover { color: #ff99ff; }
 
 .lista-textos-title { font-size: 1.6vw; }
 
-.author-intro-grid { display: grid; grid-template-columns: 4fr 4fr 3fr; }
+.author-intro-grid { display: grid; grid-template-columns: 4fr 4fr; }
+
+.author-intro-list-grid { display: grid; grid-template-columns: 1fr 3fr; }
 
 .author-intro-container { position: relative; text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 0%; padding-bottom: 10%; }
 
@@ -183,6 +185,7 @@ a.lista-textos:hover { color: #ff99ff; }
   /*TEXTOS MOBILE*/
   .chinese { font-size: 2.2vw; padding-right: 0%; padding-left: 0%; padding-bottom: 5%; }
   .portuguese { font-size: 2.1vw; padding-right: 0%; padding-left: 0%; padding-bottom: 5%; }
+  .notas { font-size: 1.4vw; background-color: #f4f1ef; text-align: right; padding-right: 10px; padding-left: 10px; }
   .grid-container-textos { display: grid; grid-template-columns: 1fr; padding-left: 10%; padding-right: 10%; padding-top: 0%; padding-bottom: 0%; }
   /*SITE FOOTER MOBILE*/
   .sitefooter { background-color: gray; color: white; padding-top: 3%; padding-right: 10%; padding-left: 10%; font-size: 2vw; }
