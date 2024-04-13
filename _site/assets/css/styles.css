@@ -168,7 +168,7 @@ a.lista-textos:hover { color: #ff99ff; }
 .sitefooter-grid { display: grid; grid-template-columns: 1fr 1fr; padding-bottom: 1%; }
 
 /*MOBILE*/
-@media all and (max-width: 600px) { /* GENERAL MOBILE */
+@media only screen and (max-resolution: 800dpi) { /* GENERAL MOBILE */
   img.sitetitle { width: 50%; padding-bottom: 1%; }
   h1 { font-size: 4vw; }
   ul { font-size: 3.5vw; }

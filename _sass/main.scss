@@ -535,7 +535,7 @@ a.texto{
 
 /*MOBILE*/
 
-@media all and (max-width: 600px){
+@media only screen and (max-resolution: 800dpi){
 
 /* GENERAL MOBILE */
 	img.sitetitle{
