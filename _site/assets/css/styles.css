@@ -168,7 +168,7 @@ a.lista-textos:hover { color: #ff99ff; }
 .sitefooter-grid { display: grid; grid-template-columns: 1fr 1fr; padding-bottom: 1%; }
 
 /*MOBILE*/
-@media only screen and (max-width: 600px) { /* GENERAL MOBILE */
+@media only screen and (max-width: 600px), screen and (max-height: 1000px) { /* GENERAL MOBILE */
   img.sitetitle { width: 50%; padding-bottom: 1%; }
   h1 { font-size: 4vw; }
   ul { font-size: 3.5vw; }
@@ -186,20 +186,20 @@ a.lista-textos:hover { color: #ff99ff; }
   /*TEXTOS MOBILE*/
   .chinese { font-size: 16px; padding-right: 0%; padding-left: 0%; padding-bottom: 5%; }
   .portuguese { font-size: 12px; padding-right: 0%; padding-left: 0%; padding-bottom: 5%; }
-  .notas { font-size: 1.4vw; background-color: #f4f1ef; text-align: right; padding-right: 10px; padding-left: 10px; }
+  .notas { font-size: 9px; background-color: #f4f1ef; text-align: right; padding-right: 10px; padding-left: 10px; }
   .grid-container-textos { display: grid; grid-template-columns: 1fr; padding-left: 0%; padding-right: 0%; padding-top: 0%; padding-bottom: 0%; }
   /*hover text - chinese-portuguese MOBILE*/
-  .dropbtn { color: black; border: none; }
+  .dropbtn { color: black; width: 100%; border: none; }
   .dropdown { position: relative; display: inline-block; }
-  .dropdown-content { display: none; position: absolute; width: max-content; max-width: 20vw; background-color: black; border-radius: 5px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; z-index: 1; }
+  .dropdown-content { display: none; position: fixed; left: 0; bottom: 10; width: 80%; max-width: 80%; background-color: black; border-radius: 10px; padding-left: 10%; padding-right: 10%; padding-bottom: 10%; z-index: 1; }
   .dropdown:hover .dropdown-content { display: block; }
   .dropdown:hover .dropbtn { background-color: #ffaaff; }
   .hovertext-pinyin { color: #ff88ff; font-size: 12px; }
-  .hovertext-pt { color: white; font-size: 12px; }
-  .hovertext-link { color: #22ccff; font-size: 11px; }
+  .hovertext-pt { color: white; font-size: 10px; }
+  .hovertext-link { color: #22ccff; font-size: 8px; }
   a.texto { color: black; }
   .hovertext { position: relative; }
-  .hovertext:before { content: attr(pinyin-hover); visibility: hidden; opacity: 1; width: 140px; background-color: #313A46; color: #ffffff; border-radius: 5px; padding: 5px 0; transition: opacity .1s ease-in-out; position: absolute; z-index: 1; left: 0; top: 100%; }
+  .hovertext:before { content: attr(pinyin-hover); visibility: hidden; opacity: 1; width: 140px; background-color: #313A46; color: #ffffff; border-radius: 10px; padding: 5px 0; transition: opacity .1s ease-in-out; position: absolute; z-index: 1; left: 0; top: 100%; }
   .pinyin { visibility: visible; }
   .hanzi:hover { display: block; }
   .hovertext-pt:before { content: attr(pt-hover); visibility: hidden; opacity: 1; width: 140px; background-color: gray; color: #ffffff; border-radius: 5px; padding: 5px 0; transition: opacity .1s ease-in-out; position: relative; z-index: 1; left: 0; top: 100%; }
