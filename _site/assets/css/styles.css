@@ -168,10 +168,11 @@ a.lista-textos:hover { color: #ff99ff; }
 .sitefooter-grid { display: grid; grid-template-columns: 1fr 1fr; padding-bottom: 1%; }
 
 /*MOBILE*/
-@media only screen and (max-width: 900px) { /* GENERAL MOBILE */
+@media only screen and (max-width: 1000px) { /* GENERAL MOBILE */
   img.sitetitle { width: 50%; padding-bottom: 1%; }
   h1 { font-size: 4vw; }
   ul { font-size: 3.5vw; }
+  .sitecontent { padding-top: 5%; padding-left: 3%; padding-right: 3%; padding-bottom: 7%; }
   /* NAVIGATION MOBILE */
   .menu-bar { color: #ffffff; text-align: center; font-size: 20px; display: grid; grid-template-columns: 1fr 1fr 1fr; }
   /*INDEX AUTHORS MOBILES*/
@@ -186,7 +187,7 @@ a.lista-textos:hover { color: #ff99ff; }
   .chinese { font-size: 2.2vw; padding-right: 0%; padding-left: 0%; padding-bottom: 5%; }
   .portuguese { font-size: 2.1vw; padding-right: 0%; padding-left: 0%; padding-bottom: 5%; }
   .notas { font-size: 1.4vw; background-color: #f4f1ef; text-align: right; padding-right: 10px; padding-left: 10px; }
-  .grid-container-textos { display: grid; grid-template-columns: 1fr; padding-left: 10%; padding-right: 10%; padding-top: 0%; padding-bottom: 0%; }
+  .grid-container-textos { display: grid; grid-template-columns: 1fr; padding-left: 0%; padding-right: 0%; padding-top: 0%; padding-bottom: 0%; }
   /*SITE FOOTER MOBILE*/
   .sitefooter { background-color: gray; color: white; padding-top: 3%; padding-right: 10%; padding-left: 10%; font-size: 2vw; }
   .sitefooter-grid { display: grid; grid-template-columns: 1fr; padding-bottom: 4%; } }

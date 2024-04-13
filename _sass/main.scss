@@ -537,7 +537,7 @@ a.texto{
 
 /*MOBILE*/
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1000px){
 
 /* GENERAL MOBILE */
 	img.sitetitle{
@@ -552,6 +552,13 @@ a.texto{
 
 	ul {
 		font-size: 3.5vw;
+	}
+
+	.sitecontent {
+		padding-top: 5%;	
+		padding-left: 3%;
+		padding-right: 3%;
+		padding-bottom: 7%;
 	}
 
 /* NAVIGATION MOBILE */
@@ -631,8 +638,8 @@ a.texto{
 		.grid-container-textos {
 			display: grid;
 			  grid-template-columns: 1fr;
-			  padding-left: 10%;
-			  padding-right: 10%;
+			  padding-left: 0%;
+			  padding-right: 0%;
 			  padding-top: 0%;
 			  padding-bottom: 0%;
 
