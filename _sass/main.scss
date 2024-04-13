@@ -195,8 +195,6 @@
 /*TEXT PAGES*/
 	/*hover text - chinese-portuguese*/
 
-
-
 .dropbtn {
   color: black;
   border: none;
@@ -537,7 +535,7 @@ a.texto{
 
 /*MOBILE*/
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 600px){
 
 /* GENERAL MOBILE */
 	img.sitetitle{
@@ -614,14 +612,14 @@ a.texto{
 /*TEXTOS MOBILE*/
 
 	.chinese {
-			font-size: 2.2vw;
+			font-size: 16px;
 			padding-right: 0%;
 			padding-left: 0%;
 			padding-bottom: 5%;
 			
 		}
 		.portuguese {
-			font-size: 2.1vw;
+			font-size: 12px;
 			padding-right: 0%;
 			padding-left: 0%;
 			padding-bottom: 5%;
@@ -642,7 +640,114 @@ a.texto{
 			  padding-right: 0%;
 			  padding-top: 0%;
 			  padding-bottom: 0%;
+		}
 
+	/*hover text - chinese-portuguese MOBILE*/
+
+		.dropbtn {
+		  color: black;
+		  border: none;
+		}
+
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  width: max-content;
+		  max-width: 20vw;
+		  background-color: black;
+		  border-radius: 5px;
+		  padding-left: 10px;
+		  padding-right: 10px;
+		  padding-bottom: 10px;
+		  z-index: 1;
+		}
+
+		.dropdown:hover .dropdown-content {display: block;}
+
+		.dropdown:hover .dropbtn {background-color: #ffaaff;}
+
+		.hovertext-pinyin{
+			color: #ff88ff;
+			font-size: 12px;
+		}
+
+		.hovertext-pt{
+			color: white;
+			font-size: 12px;
+		}
+
+		.hovertext-link{
+			color: #22ccff;
+			font-size: 11px;
+		}
+
+		a.texto{
+			color: black;
+		}
+
+
+		.hovertext {
+		  position: relative;
+		}
+
+		.hovertext:before {
+		  content: attr(pinyin-hover);
+		  visibility: hidden;
+		  opacity: 1;
+		  width: 140px;
+		  background-color: #313A46;
+		  color: #ffffff;
+		  border-radius: 5px;
+		  padding: 5px 0;
+		  transition: opacity .1s ease-in-out;
+		  
+
+		  position: absolute;
+		  z-index: 1;
+		  left: 0;
+		  top: 100%;
+		}
+
+		.pinyin{
+			visibility: visible;
+		}
+
+		.hanzi:hover{
+			display: block;
+		}
+
+		.hovertext-pt:before {
+		  content: attr(pt-hover);
+		  visibility: hidden;
+		  opacity: 1;
+		  width: 140px;
+		  background-color: gray;
+		  color: #ffffff;
+		  border-radius: 5px;
+		  padding: 5px 0;
+		  transition: opacity .1s ease-in-out;
+		  
+
+		  position: relative;
+		  z-index: 1;
+		  left: 0;
+		  top: 100%;
+		}
+
+		.hovertext:hover:before {
+		  opacity: 1;
+		  visibility: visible;
+		}
+
+		.hovertext-pt:hover:before{
+			opacity: 1;
+			visibility: visible;
+			background-color: gray;
 		}
 
 /*SITE FOOTER MOBILE*/
