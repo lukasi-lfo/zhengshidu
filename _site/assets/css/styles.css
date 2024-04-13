@@ -168,7 +168,7 @@ a.lista-textos:hover { color: #ff99ff; }
 .sitefooter-grid { display: grid; grid-template-columns: 1fr 1fr; padding-bottom: 1%; }
 
 /*MOBILE*/
-@media only screen and (max-width: 600px), screen and (max-height: 1000px) { /* GENERAL MOBILE */
+@media all and (max-width: 600px) { /* GENERAL MOBILE */
   img.sitetitle { width: 50%; padding-bottom: 1%; }
   h1 { font-size: 4vw; }
   ul { font-size: 3.5vw; }
@@ -191,7 +191,7 @@ a.lista-textos:hover { color: #ff99ff; }
   /*hover text - chinese-portuguese MOBILE*/
   .dropbtn { color: black; width: 100%; border: none; }
   .dropdown { position: relative; display: inline-block; }
-  .dropdown-content { display: none; position: fixed; left: 0; bottom: 10; width: 80%; max-width: 80%; background-color: black; border-radius: 10px; padding-left: 10%; padding-right: 10%; padding-bottom: 10%; z-index: 1; }
+  .dropdown-content { display: none; position: fixed; left: 0; bottom: 0; top: 70%; width: 80%; max-width: 80%; background-color: black; border-radius: 10px; padding-top: 5%; padding-left: 10%; padding-right: 10%; padding-bottom: 10%; z-index: 1; }
   .dropdown:hover .dropdown-content { display: block; }
   .dropdown:hover .dropbtn { background-color: #ffaaff; }
   .hovertext-pinyin { color: #ff88ff; font-size: 12px; }

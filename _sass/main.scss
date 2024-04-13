@@ -535,8 +535,7 @@ a.texto{
 
 /*MOBILE*/
 
-@media only screen and (max-width: 600px),
-			screen and (max-height: 1000px){
+@media all and (max-width: 600px){
 
 /* GENERAL MOBILE */
 	img.sitetitle{
@@ -660,11 +659,13 @@ a.texto{
 		  display: none;
 		  position: fixed;
 		  left: 0;
-		  bottom: 10;
+		  bottom: 0;
+		  top:70%;
 		  width: 80%;
 		  max-width: 80%;
 		  background-color: black;
 		  border-radius: 10px;
+		  padding-top: 5%;
 		  padding-left: 10%;
 		  padding-right: 10%;
 		  padding-bottom: 10%;
