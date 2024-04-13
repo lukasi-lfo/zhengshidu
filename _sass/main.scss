@@ -613,25 +613,26 @@ a.texto{
 /*TEXTOS MOBILE*/
 
 	.chinese {
-			font-size: 3vmin;
+			font-size: 3vmax;
 			padding-right: 0%;
 			padding-left: 0%;
 			padding-bottom: 5%;
 			
 		}
 		.portuguese {
-			font-size: 2vmin;
+			font-size: 2vmax;
 			padding-right: 0%;
 			padding-left: 0%;
 			padding-bottom: 5%;
 		}
 
 		.notas {
-		font-size: 1.5vmin;
+		font-size: 1.8vmax;
 		background-color: #f4f1ef;
 		text-align: right;
 		padding-right: 10px;
 		padding-left: 10px;
+		padding-bottom: 10px;
 	}
 
 		.grid-container-textos {

@@ -184,9 +184,9 @@ a.lista-textos:hover { color: #ff99ff; }
   .author-intro-grid { display: grid; grid-template-columns: 1fr; }
   .lista-textos-title { font-size: 3.5vw; }
   /*TEXTOS MOBILE*/
-  .chinese { font-size: 3vmin; padding-right: 0%; padding-left: 0%; padding-bottom: 5%; }
-  .portuguese { font-size: 2vmin; padding-right: 0%; padding-left: 0%; padding-bottom: 5%; }
-  .notas { font-size: 1.5vmin; background-color: #f4f1ef; text-align: right; padding-right: 10px; padding-left: 10px; }
+  .chinese { font-size: 3vmax; padding-right: 0%; padding-left: 0%; padding-bottom: 5%; }
+  .portuguese { font-size: 2vmax; padding-right: 0%; padding-left: 0%; padding-bottom: 5%; }
+  .notas { font-size: 1.8vmax; background-color: #f4f1ef; text-align: right; padding-right: 10px; padding-left: 10px; padding-bottom: 10px; }
   .grid-container-textos { display: grid; grid-template-columns: 1fr; padding-left: 0%; padding-right: 0%; padding-top: 0%; padding-bottom: 0%; }
   /*hover text - chinese-portuguese MOBILE*/
   .dropbtn { color: black; width: 100%; border: none; }
