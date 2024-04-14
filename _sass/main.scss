@@ -546,11 +546,17 @@ a.texto{
 
 	h1
 	{
-		font-size: 5.9vmin;
+		font-size: 5.9vmax;
+	}
+
+	h2
+	{
+		font-size: 4.9vmax;
+		opacity: 70%;
 	}
 
 	ul {
-		font-size: 2vmin;
+		font-size: 2vmax;
 	}
 
 	.sitecontent {
@@ -662,7 +668,7 @@ a.texto{
 		  position: fixed;
 		  left: 0;
 		  bottom: 0;
-		  top: 70%;
+		  top: auto;
 		  width: 80%;
 		  max-width: 80%;
 		  background-color: black;
@@ -680,17 +686,17 @@ a.texto{
 
 		.hovertext-pinyin{
 			color: #ff88ff;
-			font-size: 12px;
+			font-size: 3vmax;
 		}
 
 		.hovertext-pt{
 			color: white;
-			font-size: 10px;
+			font-size: 2.5vmax;
 		}
 
 		.hovertext-link{
 			color: #22ccff;
-			font-size: 8px;
+			font-size: 2vmax;
 		}
 
 		a.texto{
