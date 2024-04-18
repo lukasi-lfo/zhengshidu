@@ -6,11 +6,31 @@ xiao jun:
   name: xiao jun
   chinese_name: 萧军
   link: /authors/xiao-jun.html
-san mao:
-  name: san mao
-  chinese_name: 三毛
-  link: /authors/san-mao.html
-clarice lispector:
-  name: clarice lispector
-  chinese_name: 克拉丽丝·李斯佩克朵
-  link: /authors/clarice-lispector.html
+#san mao:
+#  name: san mao
+#  chinese_name: 三毛
+#  link: /authors/san-mao.html
+#clarice lispector:
+#  name: clarice lispector
+#  chinese_name: 克拉丽丝·李斯佩克朵
+#  link: /authors/clarice-lispector.html
+yu dafu:
+  name: yu dafu
+  chinese_name: 郁达夫
+  link: /authors/yu-dafu.html
+zhou zuoren:
+  name: zhou zuoren
+  chinese_name: 周作人
+  link: /authors/zhou-zuoren.html
+xiao hong:
+  name: xiao hong
+  chinese_name: 萧红
+  link: /authors/xiao-hong.html
+lao she:
+  name: lao she
+  chinese_name: 老舍
+  link: /authors/lao-she.html
+xu zhimo:
+  name: xu zhimo
+  chinese_name: 徐志摩
+  link: /authors/xu-zhimo.html
