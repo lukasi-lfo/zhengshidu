@@ -36,7 +36,7 @@ a.title { text-decoration: none; color: #000000; font-family: urw gothic L, avan
 a.title:hover { color: #dcdede; }
 
 /*INDEX PAGE*/
-.authors-index-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; }
+.authors-index-grid { align-content: center; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; }
 
 .authors-index-container:hover .authors-index-img { opacity: 0.3; }
 
@@ -177,8 +177,8 @@ a.lista-textos:hover { color: #ff99ff; }
   /* NAVIGATION MOBILE */
   .menu-bar { color: #ffffff; text-align: center; font-size: 20px; display: grid; grid-template-columns: 1fr 1fr; }
   /*INDEX AUTHORS MOBILES*/
-  .authors-index-centered-pt { position: absolute; top: 50%; left: 0%; /*transform: translate(-50%, -50%);*/ opacity: 1; transition: .5s ease; object-fit: contain; max-height: 100%; max-width: 100%; overflow: hidden; text-overflow: clip; }
-  .authors-index-grid { display: grid; grid-template-columns: 1fr; }
+  .authors-index-centered-pt { position: absolute; top: 50%; left: 10%; /*transform: translate(-50%, -50%);*/ opacity: 1; transition: .5s ease; object-fit: contain; max-height: 100%; max-width: 100%; overflow: hidden; text-overflow: clip; }
+  .authors-index-grid { align-content: center; display: grid; grid-template-columns: 1fr; }
   .author-name { opacity: 1; font-size: 20vmin; }
   .author-name-pt { opacity: 1; font-size: 5vh; color: black; }
   /*AUTHOR PAGE MOBILE*/

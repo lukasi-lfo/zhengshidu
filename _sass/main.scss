@@ -104,6 +104,7 @@
 /*INDEX PAGE*/
 
 	.authors-index-grid	{
+		align-content: center;
 		display: grid;
 		  grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
@@ -581,7 +582,7 @@ a.texto{
 .authors-index-centered-pt{
 		position: absolute;
 	  	top: 50%;
-	  	left: 0%;
+	  	left: 10%;
 	  	/*transform: translate(-50%, -50%);*/
 	  	opacity: 1;
 	  	transition: .5s ease;
@@ -593,8 +594,10 @@ a.texto{
 	}
 
 .authors-index-grid	{
+	align-content: center;
 		display: grid;
 		  grid-template-columns: 1fr;
+
 	}
 .author-name{
 		opacity: 1;
